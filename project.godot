@@ -15,6 +15,13 @@ run/main_scene="uid://c0jjbmy8dgosa"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1080
+window/size/mode=2
+window/stretch/mode="canvas_items"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
@@ -24,3 +31,4 @@ config/icon="res://icon.svg"
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.96862745, 0.3529412, 0.3019608, 1)
