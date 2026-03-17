@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://d00b4q8eao4le" path="res://scripts/main_game_script.gd" id="1_it2yt"]
 
+[sub_resource type="Theme" id="Theme_it2yt"]
+
 [node name="MainGameScene" type="Node2D" unique_id=1234954710]
 script = ExtResource("1_it2yt")
 
@@ -20,51 +22,61 @@ custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = SubResource("Theme_it2yt")
+theme_override_font_sizes/font_size = 64
 
 [node name="Button2" type="Button" parent="GridContainer" unique_id=104389182]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
 
 [node name="Button3" type="Button" parent="GridContainer" unique_id=881780064]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
 
 [node name="Button4" type="Button" parent="GridContainer" unique_id=67661575]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
 
 [node name="Button5" type="Button" parent="GridContainer" unique_id=894131495]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
 
 [node name="Button6" type="Button" parent="GridContainer" unique_id=877813823]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
 
 [node name="Button7" type="Button" parent="GridContainer" unique_id=2109693658]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
 
 [node name="Button8" type="Button" parent="GridContainer" unique_id=2024721552]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
 
 [node name="Button9" type="Button" parent="GridContainer" unique_id=918956724]
 custom_minimum_size = Vector2(120, 120)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 64
