@@ -82,31 +82,33 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 64
 
-[node name="Strike" parent="." unique_id=402121333 instance=ExtResource("2_qsd30")]
-position = Vector2(536, 416)
+[node name="strike_lines" type="Node" parent="." unique_id=1546642262]
 
-[node name="Strike6" parent="." unique_id=2123138980 instance=ExtResource("2_qsd30")]
+[node name="row1" parent="strike_lines" unique_id=402121333 instance=ExtResource("2_qsd30")]
+position = Vector2(536, 408)
+
+[node name="row2" parent="strike_lines" unique_id=174844597 instance=ExtResource("2_qsd30")]
 position = Vector2(536, 528)
-rotation = 1.5707964
 
-[node name="Strike7" parent="." unique_id=1322013293 instance=ExtResource("2_qsd30")]
+[node name="row3" parent="strike_lines" unique_id=22698601 instance=ExtResource("2_qsd30")]
+position = Vector2(536, 648)
+
+[node name="col1" parent="strike_lines" unique_id=1194714173 instance=ExtResource("2_qsd30")]
 position = Vector2(416, 528)
 rotation = 1.5707964
 
-[node name="Strike8" parent="." unique_id=1308899321 instance=ExtResource("2_qsd30")]
+[node name="col2" parent="strike_lines" unique_id=300819430 instance=ExtResource("2_qsd30")]
+position = Vector2(536, 528)
+rotation = 1.5707964
+
+[node name="col3" parent="strike_lines" unique_id=1927312053 instance=ExtResource("2_qsd30")]
 position = Vector2(664, 528)
 rotation = 1.5707964
 
-[node name="Strike2" parent="." unique_id=1152758054 instance=ExtResource("2_qsd30")]
-position = Vector2(536, 544)
-
-[node name="Strike4" parent="." unique_id=1085293962 instance=ExtResource("2_qsd30")]
-position = Vector2(544, 536)
+[node name="diag" parent="strike_lines" unique_id=1046478657 instance=ExtResource("2_qsd30")]
+position = Vector2(536, 528)
 rotation = 0.7853982
 
-[node name="Strike5" parent="." unique_id=1894332047 instance=ExtResource("2_qsd30")]
+[node name="a_diag" parent="strike_lines" unique_id=161322718 instance=ExtResource("2_qsd30")]
 position = Vector2(536, 528)
 rotation = -0.7853982
-
-[node name="Strike3" parent="." unique_id=506576911 instance=ExtResource("2_qsd30")]
-position = Vector2(536, 664)

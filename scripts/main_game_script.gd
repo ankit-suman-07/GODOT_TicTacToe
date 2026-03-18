@@ -5,16 +5,20 @@ const CELL_X = "X"
 const CELL_0 = "0"
 
 @onready var buttons = $GridContainer.get_children()
+@onready var strikes = $strike_lines.get_children()
 
 var current_player
 var board
 
 
 func _ready() -> void:
+	for strike in strikes:
+		strike.visible = false
 	var button_index = 0
 	for button in buttons:
 		button.connect("pressed", _on_button_click.bind(button_index, button))
 		button_index += 1
+	
 	
 	reset_game()
 
@@ -58,12 +62,14 @@ func get_winner(button):
 	for i in range(3):
 		var v = board[i][0]
 		if v != "" and v == board[i][1] and v == board[i][2]:
+			strikes[i].visible = true
 			return v
 	
 	# Check columns
 	for j in range(3):
 		var v = board[0][j]
 		if v != "" and v == board[1][j] and v == board[2][j]:
+			strikes[j+3].visible = true
 			return v
 	
 	# Check diagonals
@@ -72,10 +78,12 @@ func get_winner(button):
 	if center != "":
 		# Main diagonal
 		if center == board[0][0] and center == board[2][2]:
+			strikes[6].visible = true
 			return center
 		
 		# Anti-diagonal
 		if center == board[0][2] and center == board[2][0]:
+			strikes[7].visible = true
 			return center
 	
 	return null
