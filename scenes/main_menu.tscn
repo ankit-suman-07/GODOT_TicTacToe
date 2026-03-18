@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://dx3cjqbnibep8"]
 
+[ext_resource type="Script" uid="uid://bujbodgu1pglr" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+
 [node name="main_menu" type="Control" unique_id=1981535127]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_l6cm7")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=114161580]
 layout_mode = 1
@@ -36,3 +39,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Exit
 "
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/PlayBtn" to="." method="_on_play_btn_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ExitBtn" to="." method="_on_exit_btn_pressed"]

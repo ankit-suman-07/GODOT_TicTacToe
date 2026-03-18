@@ -8,12 +8,14 @@ const CELL_0 = "0"
 @onready var strikes = $strike_lines.get_children()
 @onready var display = $display
 @onready var turn = $turn
+@onready var restartBtn = $VBoxContainer2/RestartBtn
 
 var current_player
 var board
 
 
 func _ready() -> void:
+	restartBtn.visible = false
 	for strike in strikes:
 		strike.visible = false
 	var button_index = 0
@@ -46,12 +48,14 @@ func _on_button_click(idx, button):
 		print("Winner is:", winner)
 		display.text = winner + " WON"
 		disable_all_buttons()
+		restartBtn.visible = true
 		return
 	
 	# Check draw
 	if is_draw():
 		print("Draw!")
 		disable_all_buttons()
+		restartBtn.visible = true
 		return
 	
 	# Switch player
@@ -118,3 +122,11 @@ func reset_game():
 	for button in buttons:
 		button.text = ""
 		button.disabled = false
+
+
+func _on_exit_btn_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+
+
+func _on_restart_btn_pressed() -> void:
+	get_tree().reload_current_scene()
