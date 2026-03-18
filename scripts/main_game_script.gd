@@ -7,6 +7,7 @@ const CELL_0 = "0"
 @onready var buttons = $GridContainer.get_children()
 @onready var strikes = $strike_lines.get_children()
 @onready var display = $display
+@onready var turn = $turn
 
 var current_player
 var board
@@ -19,7 +20,7 @@ func _ready() -> void:
 	for button in buttons:
 		button.connect("pressed", _on_button_click.bind(button_index, button))
 		button_index += 1
-	
+	turn.text = "X\'s turn"
 	
 	reset_game()
 
@@ -55,6 +56,7 @@ func _on_button_click(idx, button):
 	
 	# Switch player
 	current_player = CELL_X if current_player == CELL_0 else CELL_0
+	turn.text = current_player + "\'s turn"
 	
 	print(board)
 
