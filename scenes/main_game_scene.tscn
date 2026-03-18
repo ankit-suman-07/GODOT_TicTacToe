@@ -112,3 +112,11 @@ rotation = 0.7853982
 [node name="a_diag" parent="strike_lines" unique_id=161322718 instance=ExtResource("2_qsd30")]
 position = Vector2(536, 528)
 rotation = -0.7853982
+
+[node name="display" type="Label" parent="." unique_id=2137426291]
+offset_left = 536.0
+offset_top = 784.0
+offset_right = 576.0
+offset_bottom = 883.0
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 72

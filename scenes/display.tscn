@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dj70t5d2fgb0l"]
+
+[node name="display" type="Node2D" unique_id=2020126026]
+
+[node name="Label" type="Label" parent="." unique_id=1865465674]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 72
+text = "X WON"

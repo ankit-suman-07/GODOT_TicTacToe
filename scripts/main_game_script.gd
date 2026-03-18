@@ -6,6 +6,7 @@ const CELL_0 = "0"
 
 @onready var buttons = $GridContainer.get_children()
 @onready var strikes = $strike_lines.get_children()
+@onready var display = $display
 
 var current_player
 var board
@@ -42,6 +43,7 @@ func _on_button_click(idx, button):
 	var winner = get_winner(button)
 	if winner != null:
 		print("Winner is:", winner)
+		display.text = winner + " WON"
 		disable_all_buttons()
 		return
 	
