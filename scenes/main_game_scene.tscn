@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c0jjbmy8dgosa"]
 
 [ext_resource type="Script" uid="uid://d00b4q8eao4le" path="res://scripts/main_game_script.gd" id="1_it2yt"]
+[ext_resource type="PackedScene" uid="uid://ceteg3b27i75k" path="res://scenes/strike.tscn" id="2_qsd30"]
 
 [sub_resource type="Theme" id="Theme_it2yt"]
 
@@ -80,3 +81,32 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 64
+
+[node name="Strike" parent="." unique_id=402121333 instance=ExtResource("2_qsd30")]
+position = Vector2(536, 416)
+
+[node name="Strike6" parent="." unique_id=2123138980 instance=ExtResource("2_qsd30")]
+position = Vector2(536, 528)
+rotation = 1.5707964
+
+[node name="Strike7" parent="." unique_id=1322013293 instance=ExtResource("2_qsd30")]
+position = Vector2(416, 528)
+rotation = 1.5707964
+
+[node name="Strike8" parent="." unique_id=1308899321 instance=ExtResource("2_qsd30")]
+position = Vector2(664, 528)
+rotation = 1.5707964
+
+[node name="Strike2" parent="." unique_id=1152758054 instance=ExtResource("2_qsd30")]
+position = Vector2(536, 544)
+
+[node name="Strike4" parent="." unique_id=1085293962 instance=ExtResource("2_qsd30")]
+position = Vector2(544, 536)
+rotation = 0.7853982
+
+[node name="Strike5" parent="." unique_id=1894332047 instance=ExtResource("2_qsd30")]
+position = Vector2(536, 528)
+rotation = -0.7853982
+
+[node name="Strike3" parent="." unique_id=506576911 instance=ExtResource("2_qsd30")]
+position = Vector2(536, 664)

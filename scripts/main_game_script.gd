@@ -35,7 +35,7 @@ func _on_button_click(idx, button):
 	button.disabled = true
 	
 	# Check winner
-	var winner = get_winner()
+	var winner = get_winner(button)
 	if winner != null:
 		print("Winner is:", winner)
 		disable_all_buttons()
@@ -53,7 +53,7 @@ func _on_button_click(idx, button):
 	print(board)
 
 
-func get_winner():
+func get_winner(button):
 	# Check rows
 	for i in range(3):
 		var v = board[i][0]
