@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d00b4q8eao4le" path="res://scripts/main_game_script.gd" id="1_it2yt"]
 [ext_resource type="PackedScene" uid="uid://ceteg3b27i75k" path="res://scenes/strike.tscn" id="2_qsd30"]
+[ext_resource type="FontFile" uid="uid://cgbvqalpfog4q" path="res://assets/Pixel Game.otf" id="3_d383n"]
 
 [sub_resource type="Theme" id="Theme_it2yt"]
 
@@ -120,6 +121,7 @@ offset_right = 1078.0
 offset_bottom = 883.0
 size_flags_horizontal = 3
 size_flags_vertical = 10
+theme_override_fonts/font = ExtResource("3_d383n")
 theme_override_font_sizes/font_size = 72
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -128,6 +130,7 @@ vertical_alignment = 1
 offset_top = 140.0
 offset_right = 1078.0
 offset_bottom = 249.0
+theme_override_fonts/font = ExtResource("3_d383n")
 theme_override_font_sizes/font_size = 54
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -141,7 +144,8 @@ size_flags_horizontal = 4
 
 [node name="ExitBtn" type="Button" parent="VBoxContainer" unique_id=1915055893]
 layout_mode = 2
-theme_override_font_sizes/font_size = 36
+theme_override_fonts/font = ExtResource("3_d383n")
+theme_override_font_sizes/font_size = 32
 text = "Exit"
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="." unique_id=2024997112]
@@ -152,6 +156,7 @@ offset_bottom = 87.0
 
 [node name="NewGameBtn" type="Button" parent="VBoxContainer3" unique_id=1709312352]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_d383n")
 theme_override_font_sizes/font_size = 32
 text = "New Game"
 
@@ -163,6 +168,7 @@ offset_bottom = 1018.0
 
 [node name="RestartBtn" type="Button" parent="VBoxContainer2" unique_id=694040770]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_d383n")
 theme_override_font_sizes/font_size = 36
 text = "Restart"
 

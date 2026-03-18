@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dx3cjqbnibep8"]
 
 [ext_resource type="Script" uid="uid://bujbodgu1pglr" path="res://scripts/main_menu.gd" id="1_l6cm7"]
+[ext_resource type="FontFile" uid="uid://cgbvqalpfog4q" path="res://assets/Pixel Game.otf" id="2_ekxnf"]
 
 [node name="main_menu" type="Control" unique_id=1981535127]
 layout_mode = 3
@@ -24,18 +25,21 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1286988469]
 layout_mode = 2
-theme_override_font_sizes/font_size = 72
+theme_override_fonts/font = ExtResource("2_ekxnf")
+theme_override_font_sizes/font_size = 84
 text = "Tic-Tac-Toe"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="PlayBtn" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2049886839]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 36
 text = "Play Game"
 
 [node name="ExitBtn" type="Button" parent="CenterContainer/VBoxContainer" unique_id=611771545]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ekxnf")
 theme_override_font_sizes/font_size = 36
 text = "Exit Game"
 
