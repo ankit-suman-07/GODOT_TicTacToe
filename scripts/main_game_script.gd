@@ -130,3 +130,7 @@ func _on_exit_btn_pressed() -> void:
 
 func _on_restart_btn_pressed() -> void:
 	get_tree().reload_current_scene()
+
+
+func _on_new_game_btn_pressed() -> void:
+	get_tree().reload_current_scene()

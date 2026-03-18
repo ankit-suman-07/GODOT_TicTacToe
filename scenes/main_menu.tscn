@@ -32,13 +32,12 @@ vertical_alignment = 1
 [node name="PlayBtn" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2049886839]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
-text = "Play"
+text = "Play Game"
 
 [node name="ExitBtn" type="Button" parent="CenterContainer/VBoxContainer" unique_id=611771545]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
-text = "Exit
-"
+text = "Exit Game"
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/PlayBtn" to="." method="_on_play_btn_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/ExitBtn" to="." method="_on_exit_btn_pressed"]

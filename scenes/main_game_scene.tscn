@@ -144,6 +144,17 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "Exit"
 
+[node name="VBoxContainer3" type="VBoxContainer" parent="." unique_id=2024997112]
+offset_left = 22.0
+offset_top = 34.0
+offset_right = 199.0
+offset_bottom = 87.0
+
+[node name="NewGameBtn" type="Button" parent="VBoxContainer3" unique_id=1709312352]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "New Game"
+
 [node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1239728750]
 offset_left = 470.0
 offset_top = 960.0
@@ -156,4 +167,5 @@ theme_override_font_sizes/font_size = 36
 text = "Restart"
 
 [connection signal="pressed" from="VBoxContainer/ExitBtn" to="." method="_on_exit_btn_pressed"]
+[connection signal="pressed" from="VBoxContainer3/NewGameBtn" to="." method="_on_new_game_btn_pressed"]
 [connection signal="pressed" from="VBoxContainer2/RestartBtn" to="." method="_on_restart_btn_pressed"]
