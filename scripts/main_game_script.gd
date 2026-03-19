@@ -9,6 +9,8 @@ const CELL_0 = "0"
 @onready var display = $display
 @onready var turn = $turn
 @onready var restartBtn = $VBoxContainer2/RestartBtn
+@onready var clickSound = $ClickSound
+@onready var victorySound = $VictorySound
 
 var current_player
 var board
@@ -28,6 +30,7 @@ func _ready() -> void:
 
 
 func _on_button_click(idx, button):
+	clickSound.play()
 	var y = idx / 3
 	var x = idx % 3
 	
@@ -42,12 +45,14 @@ func _on_button_click(idx, button):
 	button.text = current_player
 	button.disabled = true
 	
+	
 	# Check winner
 	var winner = get_winner(button)
 	if winner != null:
 		print("Winner is:", winner)
 		display.text = winner + " WON"
 		disable_all_buttons()
+		victorySound.play()
 		restartBtn.visible = true
 		return
 	
