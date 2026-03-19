@@ -1,4 +1,4 @@
-# Game Design Document — Tic Tac Toe (Feature-Complete Minimal Version)
+# Game Design Document — Tic Tac Toe
 
 ## 1. Game Overview
 **Title:** Tic Tac Toe  
