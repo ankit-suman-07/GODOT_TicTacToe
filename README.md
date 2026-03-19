@@ -1,6 +1,17 @@
-## Credits
+# TicTacToe
 
-### Fonts Used
--   Pixel Game
--   From [1001fints](https://www.1001fonts.com/pixel-game-font.html)
--   By [SuhaDesign](https://www.1001fonts.com/users/suhadidesign/)
+## 💻 Setup locally
+
+**Prerequisites** :
+- Git 
+- Godot v4.6.1
+
+**Step 1:** Clone the repository
+```
+git clone https://github.com/ankit-suman-07/GODOT_TicTacToe.git
+```
+
+**Step 2:** Open Godot
+```
+In godot editor, click open a new project and browse to the cloned repository folder and select.
+```
